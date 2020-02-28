@@ -1,0 +1,69 @@
+div {
+    display: block;
+}
+
+body {
+    font-family: 'Cabin';
+}
+.region-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.region-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.items_rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.row-for{
+    width: 23%;
+    position: relative;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+.item__img,
+.primary__content {
+    height: 100%;
+    transition: all .4s ease;
+}
+
+.item__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.second__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0,0);
+    transition: all .4s ease;
+    background: #00D664;
+    text-align: center;
+}
+
+.item__content:hover .second__content{
+    visibility: visible !important;
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+.item__number {
+    color: white;
+    text-align: right;
+    font-size: 28px;
+    margin: 10px 25px;
+}
+
+.item__auth{
+    color: white;
+}
