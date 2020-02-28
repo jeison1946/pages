@@ -5,7 +5,7 @@ Funcion para consultar Json
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'api/gradiAuthors.json', true);
+    xobj.open('GET', 'pages/api/gradiAuthors.json', true);
     xobj.onreadystatechange = function () {
         callback(xobj.responseText);
     };
@@ -39,7 +39,7 @@ window.onload = function () {
             eleNumber.appendChild(number);
 
             imgSite = document.createElement("img");
-            imgSite.setAttribute('src', 'assets/img/logo-white.png');
+            imgSite.setAttribute('src', 'pages/assets/img/logo-white.png');
             imgSite.setAttribute('width', "70px");
             imgSite.setAttribute('height',"70px");
 
